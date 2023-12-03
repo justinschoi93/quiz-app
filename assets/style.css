@@ -1,0 +1,114 @@
+/* General Styles */
+:root {
+    --bright-red: #C70039;
+    --pastel-blue: #8ecae6;
+    --light-yellow: #ffb703;
+    --bright-pink: #f72585;
+    --vibrant-orange: #fb8500;
+    --sea-green: #219ebc;
+    --soft-white: rgba(237, 246, 249, 0.75);
+    --sandy-beach: #ffddd2;
+    --deep-blue: #023047;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--soft-white);
+    color: var(--deep-blue);
+    background-image: url('./beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--bright-red);
+    color: var(--sandy-beach);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#score-display, #timer-display {
+    font-size: 1.2em;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: var(--soft-white);
+    box-shadow:
+        2px 2px 2px rgba(255, 255, 255, 0.7),
+        -2px -2px 2px rgba(255, 255, 255, 0.7),
+        2px -2px 2px rgba(0, 0, 0, 0.2),
+        -2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+.quiz-question {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: var(--vibrant-orange);
+}
+
+.quiz-answer {
+    background-color: var(--sea-green);
+    color: var(--soft-white);
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.quiz-answer:hover {
+    background-color: var(--bright-pink);
+}
+
+/* Pop-up Window Styles */
+.pop-up-window {
+    display: none; /* Change to 'block' to make it visible */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-yellow);
+    border: 1px solid var(--deep-blue);
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    margin-bottom: 20px;
+    color: var(--deep-blue);
+}
+
+.button {
+    background-color: var(--bright-pink);
+    color: var(--soft-white);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--vibrant-orange);
+}
+
+footer {
+    background-color: var(--deep-blue);
+    color: var(--sandy-beach);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
