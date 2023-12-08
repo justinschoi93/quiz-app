@@ -1,0 +1,9 @@
+Route 1
+- define check answer function
+    - if the question is the last question in the array, display pop-up
+    - update score-display every click
+        - 1 emoji per correct answer
+
+- add event listener to answers window
+- upon click, send value through check answer function
+
