@@ -24,6 +24,10 @@ body {
     background-attachment: fixed;
 }
 
+body::before {
+    background-color: black;
+}
+
 header {
     background-color: var(--bright-red);
     color: var(--sandy-beach);
